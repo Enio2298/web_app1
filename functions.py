@@ -1,8 +1,8 @@
 FILEPATH = "todos.txt"
-def get_todos(filepath=FILEPATH):
+def get_todos():
     """ Read a text file and return the list
     of to do items"""
-    with open(filepath, 'r') as file:
+    with open('todos.txt', encoding='iso-8859-1') as file:
         todos = file.readlines()
     return todos
 

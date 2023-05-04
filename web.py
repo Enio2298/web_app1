@@ -1,5 +1,5 @@
-import streamlit as st
 import functions
+import streamlit as st
 
 todos = functions.get_todos()
 
@@ -10,8 +10,9 @@ def add_todo():
 
 st.title("My Todo App")
 st.subheader("This is my  todo app.")
-st.write("This app is to increase the productivity")
-
+st.write("This app is to increase the <b>productivity</b>",
+         unsafe_allow_html=True)
+#Html solo está permitido para el método write
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
     if checkbox:

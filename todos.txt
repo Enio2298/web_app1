@@ -1,5 +1,4 @@
 Comer
 Dormir
 Estudiar
-Sonreír
-Escribir
+Correr
